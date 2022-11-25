@@ -1,4 +1,5 @@
 import copy
+from card import *
 from myexceptions import *
 
 class Hand:
