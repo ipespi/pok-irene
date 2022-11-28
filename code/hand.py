@@ -33,3 +33,11 @@ class Hand:
                 if contador == 4:
                     return True, repetitions
         return False
+    
+    def highest_card(self):
+        carta = 0
+        for i in self.hand:
+            if i.get_rack() >= carta:
+                carta = i.get_rack()
+                
+        return carta
